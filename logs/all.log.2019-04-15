@@ -1,0 +1,108 @@
+2019-04-15 19:25:24,556 40 db_mysql.py [123]: get keyword data error
+Traceback (most recent call last):
+  File "D:/NLP Project/comment_extract/db/db_mysql.py", line 117, in findAllMallId
+    date = datetime.datetime.now()
+AttributeError: type object 'datetime.datetime' has no attribute 'datetime'
+2019-04-15 19:26:39,421 40 db_mysql.py [119]: get keyword data error
+Traceback (most recent call last):
+  File "D:/NLP Project/comment_extract/db/db_mysql.py", line 115, in findAllMallId
+    result = conn.execute(sql)
+  File "D:\Program Files\Python\python35\lib\site-packages\pymysql\cursors.py", line 165, in execute
+    result = self._query(query)
+  File "D:\Program Files\Python\python35\lib\site-packages\pymysql\cursors.py", line 321, in _query
+    conn.query(q)
+  File "D:\Program Files\Python\python35\lib\site-packages\pymysql\connections.py", line 860, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Program Files\Python\python35\lib\site-packages\pymysql\connections.py", line 1061, in _read_query_result
+    result.read()
+  File "D:\Program Files\Python\python35\lib\site-packages\pymysql\connections.py", line 1349, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Program Files\Python\python35\lib\site-packages\pymysql\connections.py", line 1018, in _read_packet
+    packet.check_error()
+  File "D:\Program Files\Python\python35\lib\site-packages\pymysql\connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Program Files\Python\python35\lib\site-packages\pymysql\err.py", line 107, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1054, "Unknown column 'mallId' in 'field list'")
+2019-04-15 19:27:38,804 40 db_mysql.py [119]: get keyword data error
+Traceback (most recent call last):
+  File "D:/NLP Project/comment_extract/db/db_mysql.py", line 116, in findAllMallId
+    logger.info("查找到{0}条记录".format(len(result)))
+TypeError: object of type 'int' has no len()
+2019-04-15 19:34:00,201 20 db_mysql.py [118]: 查找到1179条记录
+2019-04-15 20:12:44,239 20 config.py [66]: update app.config [: env][env_active] from dev to dev
+2019-04-15 20:12:44,313 20 db_mysql.py [71]: 成功清除t_consumer_comment_focus表中的所有记录
+2019-04-15 20:12:44,601 20 db_mysql.py [102]: 查找到4000条记录
+2019-04-15 20:12:44,716 20 db_mysql.py [118]: 查找到1179条记录
+2019-04-15 20:15:09,151 20 config.py [66]: update app.config [: env][env_active] from dev to dev
+2019-04-15 20:15:09,248 20 db_mysql.py [71]: 成功清除t_consumer_comment_focus表中的所有记录
+2019-04-15 20:15:09,702 20 db_mysql.py [102]: 查找到4000条有效的店铺id记录
+2019-04-15 20:15:10,023 20 db_mysql.py [118]: 查找到1179条的商场id记录
+2019-04-15 20:15:23,258 20 extract_comment_keyword.py [198]: spend time: 14.120635630390929 cpu seconds
+2019-04-15 20:23:42,194 20 config.py [66]: update app.config [: env][env_active] from dev to dev
+2019-04-15 20:23:42,278 20 db_mysql.py [71]: 成功清除t_consumer_comment_focus表中的所有记录
+2019-04-15 20:23:48,232 20 db_mysql.py [102]: 查找到4000条有效的店铺id记录
+2019-04-15 20:23:53,334 20 db_mysql.py [118]: 查找到1179条的商场id记录
+2019-04-15 20:25:06,386 20 extract_comment_keyword.py [198]: spend time: 84.20327150654164 cpu seconds
+2019-04-15 20:26:38,777 20 config.py [66]: update app.config [: env][env_active] from dev to dev
+2019-04-15 20:26:38,856 20 db_mysql.py [71]: 成功清除t_consumer_comment_focus表中的所有记录
+2019-04-15 20:26:42,486 20 db_mysql.py [102]: 查找到4000条有效的店铺id记录
+2019-04-15 20:26:43,048 20 db_mysql.py [118]: 查找到1179条的商场id记录
+2019-04-15 20:30:17,520 20 config.py [66]: update app.config [: env][env_active] from dev to dev
+2019-04-15 20:30:17,613 20 db_mysql.py [71]: 成功清除t_consumer_comment_focus表中的所有记录
+2019-04-15 20:30:18,014 20 db_mysql.py [102]: 查找到4000条有效的店铺id记录
+2019-04-15 20:30:18,142 20 db_mysql.py [118]: 查找到1179条的商场id记录
+2019-04-15 20:30:18,211 20 extract_comment_keyword.py [191]: i = 0 
+2019-04-15 20:30:18,212 20 extract_comment_keyword.py [191]: i = 100 
+2019-04-15 20:30:18,216 20 extract_comment_keyword.py [191]: i = 200 
+2019-04-15 20:30:18,218 20 extract_comment_keyword.py [191]: i = 300 
+2019-04-15 20:30:18,219 20 extract_comment_keyword.py [191]: i = 400 
+2019-04-15 20:30:18,221 20 extract_comment_keyword.py [191]: i = 500 
+2019-04-15 20:30:18,228 20 extract_comment_keyword.py [191]: i = 600 
+2019-04-15 20:30:18,229 20 extract_comment_keyword.py [191]: i = 700 
+2019-04-15 20:30:18,230 20 extract_comment_keyword.py [191]: i = 800 
+2019-04-15 20:30:18,231 20 extract_comment_keyword.py [191]: i = 900 
+2019-04-15 20:30:18,232 20 extract_comment_keyword.py [191]: i = 1000 
+2019-04-15 20:30:18,233 20 extract_comment_keyword.py [191]: i = 1100 
+2019-04-15 20:30:28,369 20 extract_comment_keyword.py [191]: i = 0 
+2019-04-15 20:30:28,370 20 extract_comment_keyword.py [191]: i = 100 
+2019-04-15 20:30:28,376 20 extract_comment_keyword.py [191]: i = 200 
+2019-04-15 20:30:28,377 20 extract_comment_keyword.py [191]: i = 300 
+2019-04-15 20:30:28,378 20 extract_comment_keyword.py [191]: i = 400 
+2019-04-15 20:30:28,379 20 extract_comment_keyword.py [191]: i = 500 
+2019-04-15 20:30:28,379 20 extract_comment_keyword.py [191]: i = 600 
+2019-04-15 20:30:28,380 20 extract_comment_keyword.py [191]: i = 700 
+2019-04-15 20:30:28,381 20 extract_comment_keyword.py [191]: i = 800 
+2019-04-15 20:30:28,381 20 extract_comment_keyword.py [191]: i = 900 
+2019-04-15 20:30:28,382 20 extract_comment_keyword.py [191]: i = 1000 
+2019-04-15 20:30:28,383 20 extract_comment_keyword.py [191]: i = 1100 
+2019-04-15 20:30:28,383 20 extract_comment_keyword.py [191]: i = 1200 
+2019-04-15 20:30:28,384 20 extract_comment_keyword.py [191]: i = 1300 
+2019-04-15 20:30:28,385 20 extract_comment_keyword.py [191]: i = 1400 
+2019-04-15 20:30:28,385 20 extract_comment_keyword.py [191]: i = 1500 
+2019-04-15 20:30:28,386 20 extract_comment_keyword.py [191]: i = 1600 
+2019-04-15 20:30:28,387 20 extract_comment_keyword.py [191]: i = 1700 
+2019-04-15 20:30:28,387 20 extract_comment_keyword.py [191]: i = 1800 
+2019-04-15 20:30:28,388 20 extract_comment_keyword.py [191]: i = 1900 
+2019-04-15 20:30:28,389 20 extract_comment_keyword.py [191]: i = 2000 
+2019-04-15 20:30:28,389 20 extract_comment_keyword.py [191]: i = 2100 
+2019-04-15 20:30:28,391 20 extract_comment_keyword.py [191]: i = 2200 
+2019-04-15 20:30:28,394 20 extract_comment_keyword.py [191]: i = 2300 
+2019-04-15 20:30:28,395 20 extract_comment_keyword.py [191]: i = 2400 
+2019-04-15 20:30:28,396 20 extract_comment_keyword.py [191]: i = 2500 
+2019-04-15 20:30:28,397 20 extract_comment_keyword.py [191]: i = 2600 
+2019-04-15 20:30:28,398 20 extract_comment_keyword.py [191]: i = 2700 
+2019-04-15 20:30:28,399 20 extract_comment_keyword.py [191]: i = 2800 
+2019-04-15 20:30:28,400 20 extract_comment_keyword.py [191]: i = 2900 
+2019-04-15 20:30:28,400 20 extract_comment_keyword.py [191]: i = 3000 
+2019-04-15 20:30:28,401 20 extract_comment_keyword.py [191]: i = 3100 
+2019-04-15 20:30:28,402 20 extract_comment_keyword.py [191]: i = 3200 
+2019-04-15 20:30:28,403 20 extract_comment_keyword.py [191]: i = 3300 
+2019-04-15 20:30:28,404 20 extract_comment_keyword.py [191]: i = 3400 
+2019-04-15 20:30:28,412 20 extract_comment_keyword.py [191]: i = 3500 
+2019-04-15 20:30:28,413 20 extract_comment_keyword.py [191]: i = 3600 
+2019-04-15 20:30:28,414 20 extract_comment_keyword.py [191]: i = 3700 
+2019-04-15 20:30:28,415 20 extract_comment_keyword.py [191]: i = 3800 
+2019-04-15 20:30:28,416 20 extract_comment_keyword.py [191]: i = 3900 
+2019-04-15 20:30:39,603 20 extract_comment_keyword.py [199]: spend time: 22.09255202768894 cpu seconds
+2019-04-15 20:34:11,200 20 db_mongo.py [132]: 类型不正确，1

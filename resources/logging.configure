@@ -1,0 +1,39 @@
+##############################################
+[loggers]
+keys=root, log02
+
+[logger_root]
+level=INFO
+handlers=handler01
+
+
+[logger_log02]
+level=DEBUG
+handlers=handler02
+qualname=log02
+##############################################
+[handlers]
+keys=handler01,handler02
+
+[handler_handler01]
+class=FileHandler
+level=INFO
+formatter=form01
+
+
+[handler_handler02]
+class=StreamHandler
+level=NOTSET
+formatter=form01
+args=(sys.stdout,)
+##############################################
+[formatters]
+keys=form01,form02
+
+[formatter_form01]
+format=%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s %(process)d %(message)s
+datefmt=[%Y-%m-%d %H:%M:%S]
+
+[formatter_form02]
+format=(message)s
+##############################################

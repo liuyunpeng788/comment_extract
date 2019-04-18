@@ -1,0 +1,6 @@
+0000000000000000000000000000000000000000 29ac1be74018a119104ad135f7cbe7f9f8f0dbf3 liumch <liumch@fosun.com> 1555489117 +0800	commit (initial): first commit
+29ac1be74018a119104ad135f7cbe7f9f8f0dbf3 3300a9cbb918f456021aff7ed9c2fd7b40a3b09c liumch <liumch@fosun.com> 1555489355 +0800	commit (merge): update
+3300a9cbb918f456021aff7ed9c2fd7b40a3b09c 3300a9cbb918f456021aff7ed9c2fd7b40a3b09c liumch <liumch@fosun.com> 1555489567 +0800	checkout: moving from master to develop
+3300a9cbb918f456021aff7ed9c2fd7b40a3b09c 8b7309d857cc414327487760d0580a1c2a774796 liumch <liumch@fosun.com> 1555490410 +0800	commit: 配置文件更新
+8b7309d857cc414327487760d0580a1c2a774796 8ec053de1df7bf7ed75f80b3f7ec9246c4652c4e liumch <liumch@fosun.com> 1555494274 +0800	commit: 将词频文件保存到redis
+8ec053de1df7bf7ed75f80b3f7ec9246c4652c4e 123e5f63db096ad3b64d772962edc2552a7b73cf liumch <liumch@fosun.com> 1555586143 +0800	commit: 1、解决将词频文件保存到redis时乱码的问题
